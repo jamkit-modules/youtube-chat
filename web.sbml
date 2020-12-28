@@ -5,7 +5,7 @@
             user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1.2 Safari/605.1.15", \
             disallowed-url-patterns="m\\.youtube\\.com\\/(channel|user|playlist|results|c)", \
             blocking-url-patterns="(doubleclick\\.net)|(adservice\\.google\\.)|(youtube\\.com/api/stats/ads)|(&ad_type=)|(&adurl=)|(-pagead-id.)|(doubleclick\\.com)|(/ad_status.)|(/api/ads/)|(/googleads)|(/pagead/gen_)|(/pagead/lvz?)|(/pubads.)|(/pubads_)|(/securepubads)|(=adunit&)|(googlesyndication\\.com)|(innovid\\.com)|(tubemogul\\.com)|(youtube\\.com/pagead/)|(google\\.com/pagead/)|(flashtalking\\.com)|(googleadservices\\.com)|(s0\\.2mdn\\.net/ads)|(youtube\\.com/ptracking)|(youtube\\.com/pagead)|(youtube\\.com/get_midroll_)|(youtube\\.com/api/stats)", \
-            script-when-loaded=${web-prefix}__on_web_loaded, blocks-image=yes, \
+            script-when-loaded=${web-prefix}__on_web_loaded, media-playback-requires-user-action=yes, blocks-image=yes, \
             style=web
 
 =end sbml
