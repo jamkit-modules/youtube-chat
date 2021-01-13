@@ -42,10 +42,10 @@ var module = (function() {
 
             webjs.initialize(id + ".web", "__$_bridge");
             view.object(id).action("load", { 
-                "filename":dir_path + "/web.sbml",
-                "web-id":id, 
-                "web-prefix":web_prefix,
-                "video-id":video_id
+                "filename": dir_path + "/web.sbml",
+                "web-id": id, 
+                "web-prefix": web_prefix,
+                "video-id": video_id
             });
 
             _id = id, _video_id = video_id, _dir_path = dir_path;
