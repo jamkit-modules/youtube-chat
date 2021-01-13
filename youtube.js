@@ -24,7 +24,7 @@ function _getLiveChatUrl(onResult, onError) {
 
         onResult({
             "url": url
-        })
+        });
     } catch (e) {
         setTimeout(function() {
             _getLiveChatUrl(lastMessageId, onResult, onError);

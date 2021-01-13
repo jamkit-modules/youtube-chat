@@ -25,7 +25,7 @@ function _getChatMessages(lastMessageId, onResult, onError) {
 
         onResult({
             "messages": messages.reverse()
-        })
+        });
     } catch (e) {
         setTimeout(function() {
             _getChatMessages(lastMessageId, onResult, onError);
