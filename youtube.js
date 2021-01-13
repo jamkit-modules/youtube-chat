@@ -1,19 +1,3 @@
-function removePlayer(onResult, onError) {
-    _removePlayer(onResult, onError);
-}
-
-function _removePlayer(onResult, onError) {
-    try {
-        while (document.getElementById('player')) {
-            document.getElementById('player').remove();
-        }
-    } catch (e) {
-        setTimeout(function() {
-            _removePlayer(onResult, onError);
-        }, 100);
-    }
-}
-
 function getLiveChatUrl(onResult, onError) {
     _getLiveChatUrl(onResult, onError);
 }
@@ -24,10 +8,10 @@ function _getLiveChatUrl(onResult, onError) {
 
         onResult({
             "url": url
-        });
-    } catch (e) {
+        });    
+} catch (e) {
         setTimeout(function() {
-            _getLiveChatUrl(lastMessageId, onResult, onError);
+            _getLiveChatUrl(onResult, onError);
         }, 100);
     }
 }

@@ -8,7 +8,6 @@ var module = (function() {
     function _on_web_loaded(data) {
         if (data["url"].startsWith("https://www.youtube.com/watch")) {
             webjs.import(_dir_path + "/youtube.js");
-            webjs.call("removePlayer");
             webjs.call("getLiveChatUrl")
                 .then(function(result) {
                     view.object(_id + ".web").property({
@@ -30,7 +29,6 @@ var module = (function() {
 
             return;
         }
-
     }
 
     return {

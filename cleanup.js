@@ -22,4 +22,4 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
 
     document.head.appendChild(cleanup_video_style);
-})
+});
